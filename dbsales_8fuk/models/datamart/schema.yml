@@ -1,0 +1,22 @@
+version: 2
+
+models:
+      # Generate model
+      - name: dm_commodities
+        description: "Datamart para os valores de commmodities integrado"
+        columns:
+          - name: Date
+            description: "Data da Obeservação"
+          - name: Close
+            description: "Preço de fechamento da commodity"
+          - name: simbolo
+            description: "Simbolo da commodity"
+          - name: Data
+            description: "Data da Obeservação"
+          - name: symbol
+            description: "flag do tipo da commodities"
+          - name: acao
+            description: "valorr"
+          - name: quantity
+            description: "quantidade"
+

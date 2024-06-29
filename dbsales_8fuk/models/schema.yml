@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: dbsales_8fuk
+    schema: public
+    tables:
+      # Generate model
+      - name: commodities
+        description: "tabela que contem dados historicos de commodities"
+        columns:
+          - name: Date
+            description: "Data da Obeservação"
+          - name: Close
+            description: "Preço de fechamento da commodity"
+          - name: simbolo
+            description: "Simbolo da commodity"
+
+  # Generate model
+      - name: valores
+        description: "tabela que que contem valores das commodities"
+        columns:
+          - name: Data
+            description: "Data da Obeservação"
+          - name: symbol
+            description: "flag do tipo da commodities"
+          - name: acao
+            description: "valorr"
+          - name: quantity
+            description: "quantidade"
+
