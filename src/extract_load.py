@@ -4,6 +4,8 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 commodities = ['CL=F','GC=F', 'SI=F']
 
 DB_HOST = os.getenv('DB_HOST_PROD')
